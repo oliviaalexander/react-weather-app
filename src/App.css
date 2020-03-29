@@ -1,0 +1,64 @@
+body {
+    background: rgb(46, 41, 78);
+    background: linear-gradient(
+        90deg,
+        rgba(46, 41, 78, 1) 0%,
+        rgba(65, 60, 94, 1) 25%,
+        rgba(65, 60, 94, 1) 75%,
+        rgba(46, 41, 78, 1) 100%
+    );
+
+    font-family: 'Montserrat', sans-serif;
+}
+.weatherBody {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.weatherContainer {
+    margin-bottom: 20px;
+}
+
+.formContainer {
+    margin-bottom: 20px;
+}
+.formStyle {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.formInput {
+    width: 43%;
+    height: 49px !important;
+    border: 1px solid #242134;
+    font-size: 18px;
+    border-radius: 10px;
+    text-indent: 10px;
+}
+.formButton {
+    width: 53px;
+    height: 53px;
+    text-align: center;
+    border: 1px solid #635f7b;
+    border-radius: 26.5px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #242134;
+}
+.searchIcon {
+    transform: rotate(45deg);
+    color: #cbc9d3;
+}
+
+@media (max-width: 635px) {
+    .formInput,
+    .formButton {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .formButton {
+        border-radius: 15px;
+    }
+}
